@@ -150,7 +150,7 @@ class EditNoteWindow(tk.Toplevel):
                 logging.error("Błąd podczas usuwania notatki: %s", e)
                 messagebox.showerror("Błąd", f"Nie udało się usunąć notatki: {str(e)}")
 
-    def load_config():
+    def load_config(self):
         """
         Wczytuje konfigurację z pliku config.ini.
         

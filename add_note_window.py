@@ -95,7 +95,7 @@ class AddNoteWindow(tk.Toplevel):
             logging.error("Błąd podczas zapisywania nowej notatki: %s", e)
             raise Exception(f"Nie udało się zapisać notatki: {str(e)}")
         
-    def load_config():
+    def load_config(self):
         """
         Wczytuje konfigurację z pliku config.ini.
         
